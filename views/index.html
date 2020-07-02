@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-US">
+<!-- BOOTSTRAP -->
+  <head>
+    <title>Module 6: Youtube Evaluation Survey</title
+    <meta charset="utf-8">
+
+    <!-- Latest compiled and minified CSS -->
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+
+	<style>
+		h1 {
+		  color: red;
+		  font-family: verdana;
+		  font-size: 400%;
+		  text-align:center;
+		}
+	</style>
+
+	<style>
+		footer {
+		  color: grey;
+		  font-family: courier;
+		  font-size: 85%;
+		  text-align:right;
+		}
+	</style>
+
+  </head>
+
+<body style="background-color:black;">
+
+		<h1>Youtube Evaluation</h1><br>
+
+		<div class="container">
+			<a href="https://www.youtube.com/" target="_blank">Youtube</a><br>
+		<a href="https://www.youtube.com/">
+  			<img src="/assets/Logo.png" alt="Youtube Site" style="width:70px;height:42px;border:0">
+		</a><br>
+		</div>
+
+
+
+    <form id="results-form" method="POST" action="/results">
+
+
+
+  		<div class="container p-3 my-3 bg-dark text-white">
+  			What is your first name? : <input type="text" name="q1" value = "person">
+  		</div>
+
+  		<div class="container p-3 my-3 bg-dark text-white">
+    		Do you use Youtube?<br>
+    		<input type="radio" name="q2" value="Yes">Yes<br>
+    		<input type="radio" name="q2" value="No">No<br>
+  		</div>
+
+  		<div class="container p-3 my-3 bg-dark text-white">
+    		What do you think about Youtube's Ui?<br>
+    		<p>
+    			<label></label>
+          <select id = "myList">
+    				<option name = "q3" value="Excellent">Excellent</option>
+    				<option name = "q3" value="Very Good">Very Good</option>
+    				<option name = "q3" value="Good">Good</option>
+    				<option name = "q3" value="Bad">Bad</option>
+    				<option name = "q3" value="Very Bad">Very Bad</option>
+    			</select>
+    		</p>
+  		</div>
+
+
+  		<div class="container p-3 my-3 bg-dark text-white">
+    		What do you think Youtube did great on?<br>
+
+    		<input type="checkbox" name="q4" value="Proper Functionality">Proper Functionality<br>
+    		<input type="checkbox" name="q4" value="Consistency">Consistency<br>
+    		<input type="checkbox" name="q4" value="Efficiency">Efficiency<br>
+    		<input type="checkbox" name="q4" value="Usability">Usability <br>
+    		<input type="checkbox" name="q4" value="Reliability">Reliability <br>
+    		<input type="checkbox" name="q4" value="Security and Data Integrity">Security and Data Integrity<br>
+    		</div>
+
+    		<div class="container p-3 my-3 bg-dark text-white">
+    		Any comments on Youtube?<br>
+    		<textarea name="q5" rows="5" cols="30"/></textarea><br>
+  		</div>
+
+  		<div class="container p-3 my-3 bg-dark text-white">
+    		Do you use Youtube often?<br>
+    		<input type="radio" name="q6" value="Strongly Agree>">Strongly Agree<br>
+    		<input type="radio" name="q6" value="Agree">Agree<br>
+    		<input type="radio" name="q6" value="Disagree">Disagree<br>
+    		<input type="radio" name="q6" value="Strongly Disagree">Strongly Disagree<br>
+  		</div>
+
+  		<div class="container">
+  			<button type="submit">Submit the Evaluation</button>
+  		</div>
+
+		</form>
+    <script src="/assets/action.js"></script>
+	</body>
+  <footer>
+    <pre>
+    Website designed by: Tashfiq Akhand
+    Student Number: 8219894
+    Email: <a href="mailto:takha099@uottawa.ca">takha099@uottawa.ca</a>
+    </pre>
+  </footer>
+</html>

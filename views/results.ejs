@@ -1,0 +1,72 @@
+
+
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+  		h1 {
+  		  color: blue;
+  		  font-family: verdana;
+  		  font-size: 250%;
+  		  text-align:center;
+  		}
+  	</style>
+</head>
+
+<body style="background-color:powderblue">
+    <h1><strong><u>Survey analysis</u></strong></h1>
+
+
+    <h2>Question 1</h2>
+    <p>What is your first name?</p>
+    <ul>
+    <% for (var i=0; i< data[0].length; i++){ %>
+        <li><%= data[0][i].q1 %> :  <%= data[0][i].count %></li>
+    <% } %>
+    </ul>
+
+    <h2>Question 2</h2>
+    <p>Do you use Youtube?</p>
+    <ul>
+    <% for (var i=0; i< data[1].length; i++){ %>
+        <li><%= data[1][i].q2 %> :  <%= data[1][i].count %></li>
+    <% } %>
+    </ul>
+
+    <h2>Question 3</h2>
+    <p>What do you think about Youtube's Ui?</p>
+    <ul>
+    <% for (var i=0; i< data[2].length; i++){ %>
+        <li><%= data[2][i].q3 %> :  <%= data[2][i].count %></li>
+    <% } %>
+    </ul>
+
+    <h2>Question 4</h2>
+    <p>What do you think Youtube did great on?</p>
+    <ul>
+    <% for (var i=0; i< data[3].length; i++){ %>
+        <li><%= data[3][i].q4 %> :  <%= data[3][i].count %></li>
+    <% } %>
+    </ul>
+
+    <h2>Question 5</h2>
+    <p>Any comments on Youtube?</p>
+    <ul>
+        <% for (var i=0; i< data[4].length; i++){ %>
+            <li><%= data[4][i].q5 %> :  <%= data[4][i].count %></li>
+        <% } %>
+    </ul>
+
+    <h2>Question 6</h2>
+    <p>Do you use Youtube often?</p>
+    <ul>
+    <% for (var i=0; i< data[5].length; i++){ %>
+        <li><%= data[5][i].q6 %> :  <%= data[5][i].count %></li>
+    <% } %>
+    </ul>
+
+
+</body>
+</html>
